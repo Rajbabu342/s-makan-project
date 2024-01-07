@@ -1,0 +1,31 @@
+<html>
+    <body>
+    <%- include ('header.ejs') %>
+    <%- include ('nav.ejs') %>
+    <h1><%= msg %></h1>
+    <div class="col-md-6">
+        <div class="wow fadeInUp" data-wow-delay="0.5s">
+         <h1>User Login </h1>    
+            <form  action="login" method="post" >
+               <div class="col-12">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" name="unm" placeholder="User Name">
+                            <label for="message">User Name</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <input type="password" class="form-control" name="pw" ></textarea>
+                            <label for="message">Password</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <input type="submit" name="sub" value="submit" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <%- include ('footer.ejs') %>
+    </body>
+</html>

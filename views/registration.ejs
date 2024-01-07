@@ -1,0 +1,62 @@
+<html>
+    <body>
+    <%- include ('header.ejs') %>
+    <%- include ('nav.ejs') %>
+    <h1><%= msg %></h1>
+    <div class="col-md-6">
+        <div class="wow fadeInUp" data-wow-delay="0.5s">
+             
+            <form  action="register" method="post" >
+              <div class="row g-3">     
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" name="ename" class="form-control"  placeholder="Your Name">
+                            <label for="name">Your Name</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-floating">
+                            <input type="text" name="email1" class="form-control"  placeholder="Your Email">
+                            <label for="email">Your Email</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" name="loc" placeholder="Location">
+                            <label for="Location">Location</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" name="adn" placeholder="Ad. Number">
+                            <label for="message">Adhar Number</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" name="mno" placeholder="Mob. Number">
+                            <label for="message">Mob. Number</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <input type="text" class="form-control" name="unm" placeholder="User Name">
+                            <label for="message">User Name</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <input type="password" class="form-control" name="pw" ></textarea>
+                            <label for="message">Password</label>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <input type="submit" name="sub" value="submit" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <%- include ('footer.ejs') %>
+    </body>
+</html>
